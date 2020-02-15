@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'PT. ENDO Indonesia')
 
 @section('content')
 <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">

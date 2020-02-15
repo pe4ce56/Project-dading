@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{url('css/app.css')}}">
   <link rel="stylesheet" href="{{url('css/style.css')}}">
-    <title>@yield('title')</title>
+    <title>PT. ENDO Indonesia</title>
   </head>
   <body>
     <div class="px-5 py-3 header-top d-none d-lg-block  d-md-block">
