@@ -1,0 +1,25 @@
+.header-top {
+    background-color: #3a3c42;
+}
+
+.pt {
+    font-size: 1rem;
+}
+
+.navbar {
+    background-color: #0b45f1;
+    padding: 0.8rem 1rem;
+}
+
+.nav-item {
+    padding: 0px 8px;
+    font-size: 1rem;
+}
+
+.nav-item:hover {
+    background-color: #3a3c42;
+}
+
+.active {
+    background-color: #3a3c42;
+}
