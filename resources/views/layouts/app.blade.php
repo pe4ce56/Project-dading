@@ -11,7 +11,7 @@
     <title>PT. ENDO Indonesia</title>
   </head>
   <body>
-    <div class="px-5 py-3 header-top d-none d-lg-block  d-md-block">
+    <div class="px-5 py-3 header-top d-none d-lg-block">
       <div class="row">
           <div class=" col-lg-5 col-md-5 text-white pt">
           Welcome to PT. ENDO Indonesia
@@ -32,13 +32,16 @@
       <div class="collapse navbar-collapse ml-3" id="navbarNav">
         <ul class="navbar-nav">
         <li class="nav-item @if($active==='home') active @endif">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item @if($active==='about') active @endif">
             <a class="nav-link" href="/about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+          <li class="nav-item @if($active==='product') active @endif">
+            <a class="nav-link " href="#">Products</a>
+          </li>
+          <li class="nav-item @if($active==='career') active @endif">
+            <a class="nav-link " href="#">Career</a>
           </li>
         </ul>
       </div>

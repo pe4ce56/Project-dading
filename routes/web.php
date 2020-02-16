@@ -10,10 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/', 'pages.home', ['active' => 'home']);
+Route::view('/about', 'pages.about', ['active' => 'about']);
 
-Route::get('/', function () {
-    return view('pages.home', ['active' => 'home']);
-});
-Route::get('/about', function () {
-    return view('pages.about', ['active' => 'about']);
-});
+Route::get('/recruitment/register', 'CarrersController@create');
