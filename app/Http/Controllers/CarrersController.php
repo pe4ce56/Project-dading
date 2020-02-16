@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use \App\career;
 
 class CarrersController extends Controller
 {
@@ -35,8 +37,15 @@ class CarrersController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request, [
+            'username' => 'required|unique:careers',
+            'email' => 'required|unique:careers',
+            'password' => 'required|between:8,255|confirmed'
+        ]);
+        $request['password'] = Hash::make($request->password);
+        career::create($request->all());
+        return redirect('/recruitment/register');
     }
-
     /**
      * Display the specified resource.
      *

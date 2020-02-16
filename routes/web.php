@@ -14,3 +14,4 @@ Route::view('/', 'pages.home', ['active' => 'home']);
 Route::view('/about', 'pages.about', ['active' => 'about']);
 
 Route::get('/recruitment/register', 'CarrersController@create');
+Route::post('/recruitment/register', 'CarrersController@store');

@@ -4,33 +4,45 @@
     <div class="container-sm">
         <div class="card mt-4 float-none">
             <div class="card-body">
-                <form class="row form-register-carrers">
+                <form class="row form-register-carrers" action="/recruitment/register" method="POST">
+                    @csrf
                     <div class="col-lg-8 col-md-12 p-md-4">
                         <h1 class="ml-3">Akun</h1>
+                        
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label pl-3">Username</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control  @error('username') is-invalid @enderror " name="username">
+                                @error('username')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label pl-3">Email</label>
                             <div class="col-sm-8">
-                                <input type="email" class="form-control">
+                                <input type="email" class="form-control @error('email') is-invalid @enderror " name="email">
+                                @error('email')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label pl-3">Password</label>
                             <div class="col-sm-8">
-                                <input type="password" class="form-control">
+                                <input type="password" class="form-control  @error('password') is-invalid @enderror" name="password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label pl-3">Repeat Password</label>
                             <div class="col-sm-8">
-                                <input type="password" class="form-control">
+                                <input type="password" class="form-control  @error('password') is-invalid @enderror " name="password_confirmation">
+                                @error('password')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
+                       
                         <h1 class="ml-3">Identitas</h1>
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label pl-3">Nama Lengkap</label>
@@ -167,7 +179,7 @@
                         </div>
                     </div>
                     <button class="btn btn-primary btn-block btn-lg" disabled>Daftar</button>
-                    <button class="btn btn-primary btn-block btn-lg">Login</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
                 </form>
             </div>
         </div>    

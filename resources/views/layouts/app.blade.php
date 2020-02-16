@@ -41,7 +41,7 @@
             <a class="nav-link " href="#">Products</a>
           </li>
           <li class="nav-item @if($active==='career') active @endif">
-            <a class="nav-link " href="#">Career</a>
+            <a class="nav-link " href="/recruitment/register">Career</a>
           </li>
         </ul>
       </div>
