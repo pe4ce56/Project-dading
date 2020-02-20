@@ -16,6 +16,7 @@ class CreateWorkExperienceCareers extends Migration
         Schema::create('work_experience_careers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('career_id');
+            $table->foreign('career_id')->references('id')->on('careers')->onDelete('cascade');
             $table->string('company_name', 100);
             $table->date('entry_date');
             $table->date('out_date');
@@ -24,7 +25,6 @@ class CreateWorkExperienceCareers extends Migration
             $table->string('reference_HRD', 100);
             $table->string('phone_number_HRD', 15);
             $table->timestamps();
-            $table->foreign('career_id')->references('id')->on('detail_careers')->onDelete('cascade');;
         });
     }
 

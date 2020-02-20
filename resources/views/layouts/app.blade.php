@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{url('css/app.css')}}">
+  <link rel="stylesheet" href="{{url('css/app.css')}}">
   <link rel="stylesheet" href="{{url('css/style.css')}}">
     <title>PT. ENDO Indonesia</title>
   </head>
@@ -46,10 +46,12 @@
         </ul>
       </div>
     </nav>
-    @yield('content')
+    <div id="app">
+      @yield('content')
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{url('js/app.js')}}"></script>
-
+  <script src="{{url('js/careers.js')}}"></script>
   </body>
 </html>
