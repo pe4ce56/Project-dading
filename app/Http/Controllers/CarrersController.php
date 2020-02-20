@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use \App\career;
+use \App\detail_career;
 
 class CarrersController extends Controller
 {
@@ -40,10 +41,22 @@ class CarrersController extends Controller
         $this->validate($request, [
             'username' => 'required|unique:careers',
             'email' => 'required|unique:careers',
-            'password' => 'required|between:8,255|confirmed'
+            'password' => 'required|between:8,255|confirmed',
+            'name' => 'required',
+            'applied_position' => 'required',
+            'gender' => 'required',
+            'marital_status' => 'required',
+            'place_of_birth' => 'required',
+            'date_of_birth' => 'required',
+            'height' => 'required',
+            'weight' => 'required',
+            'religion' => 'required',
+
         ]);
         $request['password'] = Hash::make($request->password);
-        career::create($request->all());
+        $career = career::create($request->all());
+        $career->detail_career()->create($request->all());
+        $career->address_career()->create($request->all());
         return redirect('/recruitment/register');
     }
     /**

@@ -48,7 +48,9 @@
         </div>
       </div>
     </nav>
-    @yield('content')
+    <div id="app">
+      @yield('content')
+    </div>
     <!-- NAVBAR -->
     <div class="container-flex pt-5 pr-5 pb-4 pl-5 bg-dark">
       <div class="container text-light pt-5">
@@ -95,10 +97,10 @@
       <div class="container text-light pt-4 border-top border-low border-3">
         <h6 class="text-low">Copyright © RIZKY PUTRA KASIH, PT.</h6>
       </div>
-    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{url('js/app.js')}}"></script>
-
+  <script src="{{url('js/careers.js')}}"></script>
   </body>
 </html>

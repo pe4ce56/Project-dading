@@ -14,7 +14,8 @@ class CreateCareers extends Migration
     public function up()
     {
         Schema::create('careers', function (Blueprint $table) {
-            $table->string('username', 30)->primary();
+            $table->bigIncrements('id');
+            $table->string('username', 30)->unique();
             $table->string('email', 30)->unique();
             $table->string('password', 150);
             $table->timestamps();
