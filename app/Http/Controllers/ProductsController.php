@@ -16,13 +16,19 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        $products = Product::all();
+        $products = Product::all()->sortBy('name')->sortBy('category_id');
         $data = array('products' => $products, 'active' => 'product');
         return view('products.products', $data);
     }
-
+    public function category($category = null)
+    {
+        $products = Product::where('category_id', $category)->get()->sortBy('name');
+        $data = array('products' => $products, 'active' => 'product');
+        return view('products.products', $data);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -79,7 +85,6 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
-        return $id;
     }
 
     /**

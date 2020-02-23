@@ -27,19 +27,19 @@
     <div class="collapse navbar-collapse category-product" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="#">Semua Produk</a>
+          <a class="nav-link active" href="/products">Semua Produk</a>
         </li>
         <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="#">Alat Medis</a>
+          <a class="nav-link active" href="/products/category/1">Alat Medis</a>
         </li>
         <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="#">Bahan Habis Pakai</a>
+          <a class="nav-link active" href="/products/category/2">Bahan Habis Pakai</a>
         </li>
         <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="#">Alat dan Bahan LAB</a>
+          <a class="nav-link active" href="/products/category/3">Alat dan Bahan LAB</a>
         </li>
         <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="#">Sparepart Alkes</a>
+          <a class="nav-link active" href="/products/category/4">Sparepart Alkes</a>
         </li>
     </ul>
 </div>

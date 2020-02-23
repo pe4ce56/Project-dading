@@ -21,3 +21,4 @@ Route::get('/recruitment/register', 'CarrersController@create');
 Route::post('/recruitment/register', 'CarrersController@store');
 
 Route::resource('products', 'ProductsController');
+Route::get('/products/category/{category}', 'ProductsController@category');
