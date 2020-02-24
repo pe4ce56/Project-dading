@@ -14,12 +14,12 @@
     <div class="header-top d-none d-lg-block py-3">
       <div class="container">
         <div class="row text-white pt">
-          <div class="col-lg-6 ">
-            Welcome to PT. Risky Putra Kasih
+          <div class="col-lg-5 ">
+            Selamat Datang di PT. Risky Putra Kasih
           </div>
-          <div class="col-lg-6 text-right pt">
-            Contact us : <i class="far fa-envelope"></i> pt.riskyputrakasih@yahoo.com  
-            <i class="fas fa-phone-alt"></i> (0341)3041063 - Toll Free
+          <div class="col-lg-7 text-right pt">
+            Hubungi Kami : <i class="far fa-envelope"></i> pt.riskyputrakasih@yahoo.com  
+            <i class="fas fa-phone-alt"></i> (0341)3041063 - Bebas Pulsa
           </div>
         </div>
       </div>
@@ -33,16 +33,16 @@
         <div class="collapse navbar-collapse ml-3" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item @if($active==='home') active @endif">
-              <a class="nav-link text-white" href="/">Home</a>
+              <a class="nav-link text-white" href="/">Beranda</a>
             </li>
             <li class="nav-item @if($active==='about') active @endif">
-              <a class="nav-link text-white" href="/about">About</a>
+              <a class="nav-link text-white" href="/about">Tentang Kami</a>
             </li>
             <li class="nav-item @if($active==='product') active @endif">
-              <a class="nav-link text-white" href="#">Products</a>
+              <a class="nav-link text-white" href="#">Produk</a>
             </li>
             <li class="nav-item @if($active==='career') active @endif">
-              <a class="nav-link text-white" href="/recruitment/register">Career</a>
+              <a class="nav-link text-white" href="/recruitment/register">Karir</a>
             </li>
           </ul>
         </div>
@@ -56,37 +56,37 @@
       <div class="container text-light pt-5">
         <div class="row">
           <div class="col-lg-4">
-            <h4 class="col-header mb-5">About</h4>
+            <h4 class="col-header mb-5">Tentang Kami</h4>
             <p class="text-low">ENDO INDONESIA was founded in 2006 as a company engaged in importation and distribution of Medical Equipment. Today our products include Electromedical Equipment, Reagents, Reusable and Disposable Medical Devices, among many others and accessories. And now we had grown into the manufacturing field of Medical Recording Chart Paper.</p>
             <p class="text-low">ENDO is a company that fulfills legal requirements and receives approval from company's legal entity of Indonesia, with number C-05336 HT.01.01.TH.2006. Supported by experienced technicians and proper equipments, we also provide repairs and calibration for electromedical equipment. ENDO exist to serve your various needs of Medical Equipments and highly concerned about customer satisfaction to promote long term working relationship.</p>
           </div>
           <div class="col-lg-4">
-            <h4 class="col-header mb-5">Links</h4>
+            <h4 class="col-header mb-5">Link</h4>
             <div class="row links">
-              <div class="col-lg-6">
+              <div class="col-lg-7">
                 <ul>
-                  <li><a class="text-low" href="/">Home</a></li>
-                  <li><a class="text-low" href="/about">About</a></li>
+                  <li><a class="text-low" href="/">Beranda</a></li>
+                  <li><a class="text-low" href="/about">Tentang Kami</a></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-5">
                 <ul>
-                  <li><a class="text-low" href="#">Product</a></li>
-                  <li><a class="text-low" href="/recruitment/register">Career</a></li>
+                  <li><a class="text-low" href="#">Produk</a></li>
+                  <li><a class="text-low" href="/recruitment/register">Karir</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <h4 class="col-header mb-5">Newsletter Sign Up</h4>
-            <p class="text-low">Stay updated with latest news from PT ENDO Indonesia.</p>
+            <h4 class="col-header mb-5">Mendaftar Newsletter</h4>
+            <p class="text-low">Tetap update dengan berita terbaru dari PT. Risky Putra Kasih.</p>
               <form>
                 <div class="form-group">
-                  <label for="username">(Company / Institution / Personal)'s name</label>
+                  <label for="username">Nama (Perusahaan / Institusi / Perorangan)</label>
                   <input type="text" class="form-control outline-0" id="username">
                 </div>
                 <div class="form-group">
-                  <label for="email">Email address</label>
+                  <label for="email">Alamat Email</label>
                   <input type="email" class="form-control outline-0" id="email">
                 </div>
                 <button type="submit" class="btn btn-main text-light mt-2 outline-0 border-0">Submit</button>

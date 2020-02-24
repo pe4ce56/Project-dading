@@ -29,7 +29,7 @@ body {
 }
 
 .tagline{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .form-register-carrers {
@@ -39,6 +39,11 @@ body {
 .links a{
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+/* Career */
+.ttl{
+    border-radius: 0;
 }
 
 /* CUSTOM LIBRARY */

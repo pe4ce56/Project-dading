@@ -46,8 +46,8 @@
           <i class="fas fa-plus-square fa-4x d-inline px-0 text-main"></i>
         </div>
         <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Improving Healthcare</h4>
-          <p class="d-inline tagline text-secondary">Providing high quality products at affordable prices.</p>
+          <h4 class="col-header">Meningkatkan Kesehatan</h4>
+          <p class="d-inline tagline text-secondary">Menyediakan produk-produk berkualitas tinggi dengan harga terjangkau.</p>
         </div>
       </div>
       <!-- kiri -->
@@ -56,8 +56,8 @@
           <i class="fas fa-medkit fa-4x d-inline px-0 text-main"></i>
         </div>
         <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Networking</h4>
-          <p class="d-inline tagline text-secondary">Through doctors, hospitals, distributors, and resellers.</p>
+          <h4 class="col-header">Jaringan</h4>
+          <p class="d-inline tagline text-secondary">Melalui dokter, rumah sakit, distributor, dan reseller.</p>
         </div>
       </div>
     </div>
@@ -68,8 +68,8 @@
           <i class="fas fa-user-md fa-4x d-inline px-0 text-main"></i>
         </div>
         <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Qualified Personnels</h4>
-          <p class="d-inline tagline text-secondary">Experienced staffs in their respective fields.</p>
+          <h4 class="col-header">Personil Yang Memenuhi Syarat</h4>
+          <p class="d-inline tagline text-secondary">Staf berpengalaman di bidangnya masing-masing.</p>
         </div>
       </div>
       <!-- kiri -->
@@ -78,21 +78,21 @@
           <i class="fas fa-ambulance fa-4x d-inline px-0 text-main"></i>
         </div>
         <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Fast Delivery</h4>
-          <p class="d-inline tagline text-secondary">Most products are ready in stock.</p>
+          <h4 class="col-header">Pengiriman Cepat</h4>
+          <p class="d-inline tagline text-secondary">Sebagian besar produk sudah tersedia.</p>
         </div>
       </div>
     </div>
   </div>
   <div class="container text-center mb-5">
-    <h2 class="py-5">Our Vision and Mission</h2>
+    <h2 class="py-5">Visi dan Misi Kami</h2>
     <div class="vision pb-5">
-      <h3>Vision</h3>
-      <h5 class="text-secondary font-weight-normal mt-3">To be beneficial for the society, especially in the field of healthcare.</h5>
+      <h3>Visi</h3>
+      <h5 class="text-secondary font-weight-normal mt-3">Bermanfaat bagi masyarakat, khususnya di bidang kesehatan.</h5>
     </div>
     <div class="mission pb-5">
-      <h3>Mission</h3>
-      <h5 class="text-secondary font-weight-normal mt-3">To deliver good quality medical products at affordable prices, and to develop together with our partners.</h5>
+      <h3>Misi</h3>
+      <h5 class="text-secondary font-weight-normal mt-3">Untuk memberikan produk medis yang berkualitas dengan harga terjangkau, dan untuk berkembang bersama dengan mitra kami.</h5>
     </div>
   </div>
   @endsection
