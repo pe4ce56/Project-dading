@@ -32,8 +32,9 @@ Vue.component("validation-errors", {
     }
 });
 
-new Vue({
+const careers = new Vue({
     el: "#app",
+    mixins: [products],
     data: {
         username: "",
         email: "",

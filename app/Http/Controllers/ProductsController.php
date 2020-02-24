@@ -20,13 +20,15 @@ class ProductsController extends Controller
     public function index()
     {
         $products = Product::all()->sortBy('name')->sortBy('category_id');
-        $data = array('products' => $products, 'active' => 'product');
+        $category = ProductCategory::all()->sortBy('id');
+        $data = array('products' => $products, 'category' => $category, 'active' => 'product');
         return view('products.products', $data);
     }
     public function category($category = null)
     {
         $products = Product::where('category_id', $category)->get()->sortBy('name');
-        $data = array('products' => $products, 'active' => 'product');
+        $category = ProductCategory::all()->sortBy('id');
+        $data = array('products' => $products, 'category' => $category, 'active' => 'product');
         return view('products.products', $data);
     }
     /**
@@ -85,6 +87,8 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
+        $product = Product::where('id', $id)->get();
+        return json_encode($product);
     }
 
     /**

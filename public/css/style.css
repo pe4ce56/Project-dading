@@ -120,8 +120,14 @@ a.text-main:focus {
     background-color: transparent;
 }
 
-.product .card {
+.product .card,
+.product .card .image {
     border-radius: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.product .card .image img {
+    transition: 0.8s;
 }
 .product .card-body {
     background-color: #1c78c4;
@@ -133,4 +139,19 @@ a.text-main:focus {
 
 .product .card:hover {
     box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.75);
+}
+.product .card .image img:hover {
+    transform: scale(1.1);
+}
+
+#modalDetails .name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+.navbar-toggler.category {
+    color: #1c78c4;
+}
+.btn-category-product.active {
+    background-color: #1c78c4;
 }
