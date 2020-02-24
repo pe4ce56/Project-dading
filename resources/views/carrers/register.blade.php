@@ -327,6 +327,11 @@
                                 (Format File: JPG, JPEG, PNG, max 2 MB)</label>
                             <input type="file" class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label class="form-label">Kartu Tanda Penduduk
+                                (Format File: JPG, JPEG, PNG, max 2 MB)</label>
+                            <input type="file" class="form-control">
+                        </div>
                     </div>
                     <button class="btn btn-primary btn-block btn-lg" disabled>Daftar</button>
                     <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>

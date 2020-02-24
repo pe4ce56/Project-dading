@@ -39,7 +39,7 @@
               <a class="nav-link text-white" href="/about">Tentang Kami</a>
             </li>
             <li class="nav-item @if($active==='product') active @endif">
-              <a class="nav-link text-white" href="#">Produk</a>
+              <a class="nav-link text-white" href="/products">Products</a>
             </li>
             <li class="nav-item @if($active==='career') active @endif">
               <a class="nav-link text-white" href="/recruitment/register">Karir</a>
@@ -52,7 +52,7 @@
       @yield('content')
     </div>
     <!-- NAVBAR -->
-    <div class="container-flex pt-5 pr-5 pb-4 pl-5 bg-dark">
+    <div class="container-flex pt-5 pr-5 pb-4 pl-5 bg-dark mt-4">
       <div class="container text-light pt-5">
         <div class="row">
           <div class="col-lg-4">
@@ -101,6 +101,6 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="{{url('js/app.js')}}"></script>
-  <script src="{{url('js/careers.js')}}"></script>
+  <script src="{{url('js/careers.js')}}"></script>  
   </body>
 </html>

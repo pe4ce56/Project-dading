@@ -16,7 +16,11 @@ class CarrersController extends Controller
      */
     public function index()
     {
-        return '<form method="post"><input name="nama"><button type="submit"></button></form>';
+        // $data =  career::with('detail_career', 'address_career')->get();
+        // foreach ($data as $d) {
+        //     echo $d->address_career->career_id;
+        // }
+        // return $data->detail_career;
     }
 
     /**
