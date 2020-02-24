@@ -25,7 +25,7 @@
       </div>
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-    <div class="container">
+      <div class="container">
         <a class="navbar-brand" href="/"><img src="https://endo.id/images/logo-endo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><a class="text-low" href="#">Product</a></li>
+                  <li><a class="text-low" href="/products">Product</a></li>
                   <li><a class="text-low" href="/recruitment/register">Career</a></li>
                 </ul>
               </div>
@@ -90,17 +90,18 @@
                   <input type="email" class="form-control outline-0" id="email">
                 </div>
                 <button type="submit" class="btn btn-main text-light mt-2 outline-0 border-0">Submit</button>
-            </form>
+              </form>
           </div>
-          </div>
+        </div>
       </div>
       <div class="container text-light pt-4 border-top border-low border-3">
         <h6 class="text-low">Copyright © RIZKY PUTRA KASIH, PT.</h6>
       </div>
-
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="{{url('js/app.js')}}"></script>
-  <script src="{{url('js/careers.js')}}"></script>
+    <script src="{{url('js/app.js')}}"></script>
+    <script src="{{url('js/products.js')}}"></script>
+    <script src="{{url('js/careers.js')}}"></script>
   </body>
 </html>

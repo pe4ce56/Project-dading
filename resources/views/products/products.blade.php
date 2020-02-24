@@ -20,44 +20,76 @@
 @endif
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="navbar-toggler category">
+    @switch(Request::url())
+    @case(url('products'))
+        Semua Produk
+        @break
+    @case(url('products/category/1'))
+        Alat Medis
+        @break
+    @case(url('products/category/2'))
+        Bahan Habis Pakai
+        @break
+    @case(url('products/category/3'))
+        Alat dan Bahan LAB
+        @break
+    @case(url('products/category/4'))
+        Sparepart Alkes
+        @break
+@endswitch
+  </div>
+  <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#categoryProduct" aria-controls="categoryProduct" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   
-    <div class="collapse navbar-collapse category-product" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="/products">Semua Produk</a>
-        </li>
-        <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="/products/category/1">Alat Medis</a>
-        </li>
-        <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="/products/category/2">Bahan Habis Pakai</a>
-        </li>
-        <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="/products/category/3">Alat dan Bahan LAB</a>
-        </li>
-        <li class="nav-item btn-category-product ml-1">
-          <a class="nav-link active" href="/products/category/4">Sparepart Alkes</a>
-        </li>
+  <div class="collapse navbar-collapse category-product" id="categoryProduct">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item btn-category-product ml-1 @if(Request::url() === url('products')) active @endif">
+        <a class="nav-link text-white " href="/products">Semua Produk</a>
+      </li>
+      <li class="nav-item btn-category-product ml-1 @if(Request::url() === url('products/category/1')) active @endif">
+        <a class="nav-link text-white" href="/products/category/1">Alat Medis</a>
+      </li>
+      <li class="nav-item btn-category-product ml-1 @if(Request::url() === url('products/category/2')) active @endif">
+        <a class="nav-link text-white" href="/products/category/2">Bahan Habis Pakai</a>
+      </li>
+      <li class="nav-item btn-category-product ml-1 @if(Request::url() === url('products/category/3')) active @endif">
+        <a class="nav-link text-white" href="/products/category/3">Alat dan Bahan LAB</a>
+      </li>
+      <li class="nav-item btn-category-product ml-1 @if(Request::url() === url('products/category/4')) active @endif">
+        <a class="nav-link text-white" href="/products/category/4">Sparepart Alkes</a>
+      </li>
     </ul>
-</div>
-  </nav>
+  </div>
+</nav>
     <div class="container">
         <div class="row">
-            @foreach ($products as $product)
+              @php
+                $i = 0;
+              @endphp
                 
-                <div class="col-md-3 col-sm-4 product mt-3 mb-5">
-                    <div class="card" style="width: 16rem;">
-                        <div class="card-body">
-                            <p class="card-text">{{$product->name}}</p>
+            @foreach ($products as $product)
+                @if (Request::url() === url('products') && $i === $product->category_id-1)
+                    <h1 class="col-12 mt-4 text-center">{{$category[$i]->name}}</h1>
+                    @php
+                      $i++;
+                    @endphp
+                @endif
+                <div class="col-lg-3 col-md-4 col-6 product mt-3">
+                    <div class="card" style="max-width: 16rem;" data-toggle="modal" data-target="#modalDetails" v-on:click="details({{$product->id}})">
+                        <div class="card-body d-flex justify-content-center align-items-center  p-0" style="height: 4rem">
+                            {{$product->name}}
                         </div>
+                        <div class="image">
                          <img src="{{url('Product_images')}}/{{$product->image}}" class="card-img-top" alt="...">
+                        </div>
                     </div>
                 </div>
             
             @endforeach
         </div>
     </div>
+  <modal-details v-bind:loading="loading" v-bind:data="data"></modal-details>
 @endsection
+
