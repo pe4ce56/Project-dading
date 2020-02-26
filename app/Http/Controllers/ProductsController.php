@@ -142,7 +142,7 @@ class ProductsController extends Controller
             $data['image'] = $img_name;
         }
         $product->update($data);
-        return redirect('admin/products')->with('status', 'Produk Berhasil Diubah');;
+        return redirect('admin/products')->with('status', 'Produk Berhasil Diubah');
     }
 
     /**

@@ -51,7 +51,7 @@
               </a>
               <div class="dropdown-menu admin-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item text-white" href="/admin/products">Produk</a>
-                <a class="dropdown-item text-white" href="#">Pengaturan</a>
+                <a class="dropdown-item text-white" href="/admin/setting">Pengaturan</a>
                 <div class="dropdown-divider"></div>
                 <form method="POST" action="{{ route('logout') }}">
                   {{ csrf_field() }}
