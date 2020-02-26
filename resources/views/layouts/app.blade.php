@@ -32,18 +32,35 @@
         </button>
         <div class="collapse navbar-collapse ml-3" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item @if($active==='home') active @endif">
+            <li class="nav-item @if($active ==='home') active @endif">
               <a class="nav-link text-white" href="/">Beranda</a>
             </li>
-            <li class="nav-item @if($active==='about') active @endif">
+            <li class="nav-item @if($active ==='about') active @endif">
               <a class="nav-link text-white" href="/about">Tentang Kami</a>
             </li>
-            <li class="nav-item @if($active==='product') active @endif">
-              <a class="nav-link text-white" href="/products">Products</a>
+            <li class="nav-item @if($active ==='product') active @endif">
+              <a class="nav-link text-white" href="/products">Produk</a>
             </li>
-            <li class="nav-item @if($active==='career') active @endif">
+            <li class="nav-item @if($active ==='career') active @endif">
               <a class="nav-link text-white" href="/recruitment/register">Karir</a>
             </li>
+            @if (Auth::check())
+            <li class="nav-item dropdown @if($active ==='admin') active @endif">
+              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+              </a>
+              <div class="dropdown-menu admin-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white" href="/admin/products">Produk</a>
+                <a class="dropdown-item text-white" href="#">Pengaturan</a>
+                <div class="dropdown-divider"></div>
+                <form method="POST" action="{{ route('logout') }}">
+                  {{ csrf_field() }}
+                  <button class="dropdown-item text-white" href="#">Logout</button>
+                </form>
+              </div>
+            </li>
+            
+            @endif
           </ul>
         </div>
       </div>
@@ -52,7 +69,7 @@
       @yield('content')
     </div>
     <!-- NAVBAR -->
-    <div class="container-flex pt-5 pr-5 pb-4 pl-5 bg-dark mt-4">
+    <div class="container-flex pt-md-5 pr-md-5 pb-4 pl-md-5 bg-dark mt-4">
       <div class="container text-light pt-5">
         <div class="row">
           <div class="col-lg-4">
@@ -101,7 +118,6 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{{url('js/app.js')}}"></script>
-    <script src="{{url('js/products.js')}}"></script>
-    <script src="{{url('js/careers.js')}}"></script>
+    @yield('footer')
   </body>
 </html>

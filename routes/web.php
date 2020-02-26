@@ -13,12 +13,23 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'pages.home', ['active' => 'home']);
-Route::view('/about', 'pages.about', ['active' => 'about']);
+Route::get('/', 'PagesController@index')->name('home');
+Route::get('/about', 'PagesController@about');
+Route::get('/products', 'PagesController@products');
+Route::get('/products/category/{category}', 'PagesController@products');
+Route::get('/products/getProduct/{id}', 'PagesController@getProduct');
+// login
+Route::get('/admin/login', 'Auth\LoginController@index')->name('login');
+Route::post('/admin/login', 'Auth\LoginController@login');
+Route::get('/admin/change', 'Auth\UsersController@index');
+Route::post('/admin/logout', 'Auth\LoginController@logout')->name('logout');;
 
 Route::get('/recruitment', 'CarrersController@index');
 Route::get('/recruitment/register', 'CarrersController@create');
 Route::post('/recruitment/register', 'CarrersController@store');
 
-Route::resource('products', 'ProductsController');
-Route::get('/products/category/{category}', 'ProductsController@category');
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('/admin/products', 'ProductsController');
+});
+
+// Auth::routes();

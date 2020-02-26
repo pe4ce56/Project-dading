@@ -1,25 +1,5 @@
-const BASE_URL = "http://127.0.0.1:8000/";
-
-const products = {
-    data: {
-        data: "",
-        loading: true
-    },
-    methods: {
-        details: async function(id) {
-            this.loading = true;
-            await axios
-                .get(BASE_URL + "products/" + id)
-                .then(response => {
-                    this.data = response.data[0];
-                })
-                .catch(response => (data = response))
-                .finally(() => (this.loading = false));
-        }
-    }
-};
-
-Vue.component("modal-details", {
+const BASE_URL = "http://" + location.host;
+const modalDetails = {
     props: ["data", "loading"],
     template: `<div class="modal fade" id="modalDetails" tabindex="-1" role="dialog" aria-labelledby="modalDetailsLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -35,11 +15,11 @@ Vue.component("modal-details", {
                             {{data.name}}
                         </div>
                         <div class="modal-image mt-2 d-flex justify-content-center">
-                            <img v-bind:src="'${BASE_URL}Product_images/' + data.image" style="width: 300px" alt="...">
+                            <img v-bind:src="'${BASE_URL}/storage/product_image/' + data.image" style="width: 300px" alt="...">
                         </div>
                         <div class="details">
                             <ul>
-                            <li>Test</li>
+                                <li v-for="d in data.details">{{d.information}}</li>
                             </ul>
                         </div>
                     </div>
@@ -50,4 +30,32 @@ Vue.component("modal-details", {
             </div>
         </div>
     </div>`
+};
+
+new Vue({
+    el: "#app",
+    components: {
+        "modal-details": modalDetails
+    },
+    data: {
+        data: "",
+        loading: true,
+        url: null
+    },
+    methods: {
+        details: async function(id) {
+            this.loading = true;
+            await axios
+                .get(BASE_URL + "/products/getProduct/" + id)
+                .then(response => {
+                    this.data = response.data[0];
+                })
+                .catch(response => (this.data = response))
+                .finally(() => (this.loading = false));
+        },
+        uploadImg: function(e) {
+            const file = e.target.files[0];
+            this.url = URL.createObjectURL(file);
+        }
+    }
 });

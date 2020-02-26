@@ -28,7 +28,7 @@ body {
     background-color: #3a3c42;
 }
 
-.tagline{
+.tagline {
     font-size: 0.9rem;
 }
 .form-register-carrers {
@@ -41,7 +41,7 @@ body {
 }
 
 /* Career */
-.ttl{
+.ttl {
     border-radius: 0;
 }
 
@@ -153,5 +153,15 @@ a.text-main:focus {
     color: #1c78c4;
 }
 .btn-category-product.active {
+    background-color: #1c78c4;
+}
+
+.admin-menu {
+    border-radius: 0px;
+    background-color: #3a3c42;
+}
+
+.admin-menu a:hover,
+.admin-menu button:hover {
     background-color: #1c78c4;
 }

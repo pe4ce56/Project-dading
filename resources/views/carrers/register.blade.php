@@ -10,7 +10,7 @@
                     <div class="col-lg-8 col-md-12 p-md-4">
                         <h2 class="mb-3">Akun</h2>
                         <!-- AKUN -->
-                        <div class="container mt-2 px-5">
+                        <div class="container mt-2 px-sm-3 px-md-5">
                             <!-- Username & Email & Password -->
                             <div class="form-group">
                                 <div class="form-row mt-3">
@@ -57,7 +57,7 @@
                        
                         <!-- IDENTITAS -->
                         <h2 class="mb-4 mt-5">Identitas</h2>
-                        <div class="container mt-2 px-5">
+                        <div class="container mt-2 px-sm-3 px-md-5">
                             <div class="form-group">
                                 <div class="form-row mt-3">
                                     <div class="col">
@@ -190,7 +190,7 @@
 
                         <!-- ALAMAT DOMISILI -->
                         <h2 class="mb-4 mt-5">Alamat Domisili</h2>
-                        <div class="container mt-2 px-5">
+                        <div class="container mt-2 px-sm-3 px-md-5">
                             <div class="form-group">
                                 <!-- Nama Jalan -->
                                 <div class="form-row mt-3">
@@ -254,7 +254,7 @@
 
                         <!-- PENDIDIKAN TERAKHIR -->
                         <h2 class="mb-4 mt-5">Pendidikan Terakhir</h2>
-                        <div class="container mt-2 px-5">
+                        <div class="container mt-2 px-sm-3 px-md-5">
                             <div class="form-group row">
                                 <div class="col-sm-2">
                                     <input type="text" class="form-control @error('religion') is-invalid @enderror" placeholder="Jenjang" value="{{old('weight')}}" name="level">
@@ -293,7 +293,7 @@
                         <h4 class="mb-4 mt-5">Jelaskan dengan Singkat Diri Anda Dalam 3 Paragraf</h4>
                         <div class="container px-0">
                             <div class="form-group row">
-                                <div class="col px-5">
+                                <div class="col px-sm-3 px-md-5">
                                     <textarea class="form-control" rows="5" name="description_career"></textarea>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@
                         <h4 class="mb-4 mt-5">Jelaskan Visi dan Misi Hidup Anda</h4>
                         <div class="container px-0">
                             <div class="form-group row">
-                                <div class="col px-5">
+                                <div class="col px-sm-3 px-md-5">
                                     <textarea class="form-control" rows="5" name="vision_mision_career"></textarea>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@
                         <h4 class="mb-4 mt-5">Jelaskan Rencana Karir Anda</h4>
                         <div class="container px-0">
                             <div class="form-group row">
-                                <div class="col px-5">
+                                <div class="col px-sm-3 px-md-5">
                                     <textarea class="form-control" rows="5" name="plan"></textarea>
                                 </div>
                             </div>
@@ -339,4 +339,9 @@
             </div>
         </div>    
     </div>    
+@endsection
+
+
+@section('footer')
+<script src="{{url('js/careers.js')}}"></script>
 @endsection
