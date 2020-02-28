@@ -30,6 +30,8 @@ Route::post('/recruitment/register', 'CarrersController@store');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('/admin/products', 'ProductsController');
+    Route::get('/admin/setting', 'Auth\UsersController@index');
+    Route::put('/admin/setting/{user}', 'Auth\UsersController@update');
 });
 
 // Auth::routes();
