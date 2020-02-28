@@ -19,7 +19,7 @@
                 <img src="{{'img/about.jpg'}}" alt="PT. RIZKY PUTRA KASIH" class="img-thumbnail">
                 <div class="container-flex">
                     <h3 class="my-4">Tentang Kami</h3>
-                    <p class="text-secondary">ENDO INDONESIA was founded in 2006 as a company engaged in importation and distribution of Medical Devices. Today, among many others, our product portfolio consists of Electromedical Devices, Instruments, Disposables, Orthopaedic Implants, and accessories. Since 2012 we established a subsidiary company named PT. Meditronik Hospilab Indonesia specializing in manufacturing. The product made at the moment are Medical Chart Paper and Electromedics.</p>
+                    <p class="text-secondary">PT.RISKY PUTRA KASIH yang bergerak dalam Bidang Service Alat Kesehatan. Baik Mechanical maupun Electrical (Medis dan Non Medis). Kami Juga Menyediakan berbagai macam Spare Part untuk Alat-Alat Kesehatan. Selain itu kami juga menjual Alat-Alat Kesehatan atau Medical Equipment misalnya : Patient Monitor (Pasien Monitor), Alat USG, Suction Pump, Bed Pasien, dll. Medical Equipment atau Alat-Alat Kesehatan yang kami sediakan Baru maupun bekas (Second) namun dengan kondisi normal. Waktu Pengerjaan Untuk Service Alat-Alat Kesehatan Electrical yang kami butuhkan satu minggu.</p>
                     <h3 class="my-4">Visi</h3>
                     <p class="text-secondary">"Meningkatkan pelayanan kesehatan masyarakat Indonesia dengan menyediakan produk-produk berkualitas dengan harga terjangkau."</p>
                     <h3 class="my-4">Misi</h3>

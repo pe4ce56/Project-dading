@@ -74,8 +74,7 @@
         <div class="row">
           <div class="col-lg-4">
             <h4 class="col-header mb-5">Tentang Kami</h4>
-            <p class="text-low">ENDO INDONESIA was founded in 2006 as a company engaged in importation and distribution of Medical Equipment. Today our products include Electromedical Equipment, Reagents, Reusable and Disposable Medical Devices, among many others and accessories. And now we had grown into the manufacturing field of Medical Recording Chart Paper.</p>
-            <p class="text-low">ENDO is a company that fulfills legal requirements and receives approval from company's legal entity of Indonesia, with number C-05336 HT.01.01.TH.2006. Supported by experienced technicians and proper equipments, we also provide repairs and calibration for electromedical equipment. ENDO exist to serve your various needs of Medical Equipments and highly concerned about customer satisfaction to promote long term working relationship.</p>
+            <p class="text-low">PT.RISKY PUTRA KASIH yang bergerak dalam Bidang Service Alat Kesehatan. Baik Mechanical maupun Electrical (Medis dan Non Medis). Kami Juga Menyediakan berbagai macam Spare Part untuk Alat-Alat Kesehatan. Selain itu kami juga menjual Alat-Alat Kesehatan atau Medical Equipment misalnya : Patient Monitor (Pasien Monitor), Alat USG, Suction Pump, Bed Pasien, dll. Medical Equipment atau Alat-Alat Kesehatan yang kami sediakan Baru maupun bekas (Second) namun dengan kondisi normal. Waktu Pengerjaan Untuk Service Alat-Alat Kesehatan Electrical yang kami butuhkan satu minggu.</p>
           </div>
           <div class="col-lg-4">
             <h4 class="col-header mb-5">Link</h4>
