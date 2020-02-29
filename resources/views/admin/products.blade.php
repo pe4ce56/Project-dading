@@ -41,7 +41,7 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <img src="{{url('storage/product_image')}}/{{$product->image}}" style="max-width: 10rem"  alt="...">
+                                    <img src="{{Storage::url('product_image/'.$product->image)}}" style="max-width: 10rem"  alt="...">
                                 </div>
                             </td>
                             <td>

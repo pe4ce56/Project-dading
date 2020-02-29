@@ -73,7 +73,7 @@ class ProductsController extends Controller
         //resize img with encode data;
         $image_resize = Image::make($file, $imgName)->fit(500, 500)->encode();
         //upload img
-        Storage::disk('public')->put('product_image/' . $this->getImgName($request), $image_resize);
+        Storage::disk('public')->put('product_image/' . $imgName, $image_resize);
     }
 
     public function getImgName($request)

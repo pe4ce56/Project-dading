@@ -25,7 +25,6 @@ class PagesController extends Controller
         } else {
             $products = Product::all()->sortBy('name')->sortBy('category_id');
         }
-
         $category = ProductCategory::all()->sortBy('id');
         $data = array('products' => $products, 'category' => $category, 'active' => 'product');
         return view('pages.products', $data);

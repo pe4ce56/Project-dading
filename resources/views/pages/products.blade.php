@@ -61,9 +61,15 @@
 </nav>
 <div class="container">
   <div class="row">
-    @foreach ($products as $i=>$product)
-      @if (Request::url() === url('products') && $loop->iteration === $product->category_id)
+    @php
+        $i=0;
+    @endphp
+    @foreach ($products as $product)
+      @if (Request::url() === url('products') && $i+1 === $product->category_id)
         <h1 class="col-12 mt-4 text-center">{{$category[$i]->name}}</h1>
+        @php
+            $i++;
+        @endphp
       @endif
       <div class="col-lg-3 col-md-4 col-6 product mt-3">
         <div class="card" style="max-width: 16rem;" data-toggle="modal" data-target="#modalDetails" v-on:click="details({{$product->id}})">
@@ -71,7 +77,7 @@
             {{$product->name}}
           </div>
           <div class="image">
-            <img src="{{url('storage/product_image')}}/{{$product->image}}" class="card-img-top" alt="...">
+            <img src="{{Storage::url('product_image/'.$product->image)}}" class="card-img-top" alt="...">
           </div>
         </div>
       </div>
