@@ -1,10 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid mt-3">
-    <div class="card">
+<div class="container-fluid bg-white">
+  <div class="container pt-4 pb-3">
+    <h3>Admin</h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent p-0">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item" aria-current="page">Admin</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+<div class="container-fluid p-0">
+    <div class="card px-3">
         <div class="card-body">
-            <h3 class="my-2">Data Produk</h3>
+            <h2 class="my-3">Data Produk</h2>
             @if(session('status'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{session('status')}}
@@ -13,7 +24,7 @@
                 </button>
             </div>
             @endif
-            <a href="/admin/products/create" class="btn btn-primary ml-1">Tambah Produk</a>
+            <a href="/admin/products/create" class="btn btn-main text-light"><i class="fas fa-plus mr-2"></i> Tambah Produk</a>
             <div class="table-responsive">
                 <table class="table table-bordered mt-2">
                     <thead>

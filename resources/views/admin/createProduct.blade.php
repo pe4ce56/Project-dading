@@ -3,17 +3,18 @@
 @section('content')
 <div class="container-flex bg-white">
   <div class="container pt-4 pb-3">
-    <h3>Admin</h3>
+    <h3>Tambah Produk</h3>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bg-transparent p-0">
         <li class="breadcrumb-item"><a href="/">Beranda</a></li>
-        <li class="breadcrumb-item" aria-current="page">Admin</li>
+        <li class="breadcrumb-item"><a href="/admin/products">Admin</a></li>
+        <li class="breadcrumb-item" aria-current="page">Tambah Produk</li>
       </ol>
     </nav>
   </div>
 </div>
-<div class="container">
-  <h1>Tambah Produk</h1>
+<div class="container mt-4 mb-4">
+  <h1 class="mb-4">Tambah Produk</h1>
   <form method="post" action="/admin/products" enctype="multipart/form-data">
     @csrf
     <div class="row">
@@ -72,7 +73,7 @@
           </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Simpan</button>
+      <button type="submit" class="btn btn-primary btn-block mt-3">Simpan</button>
     </div>
   </form>
 </div>

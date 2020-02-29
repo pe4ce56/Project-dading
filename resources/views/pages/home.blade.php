@@ -2,14 +2,8 @@
 
 
 @section('content')
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    </ol>
+<!-- IMAGE CAROUSEL -->
+  <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" data-pause="false">
       <div class="carousel-item active" data-pause="false">
         <img class="d-block w-100" src="{{'img/img1.jpg'}}" alt="First slide">
@@ -27,63 +21,61 @@
         <img class="d-block w-100" src="{{'img/img5.jpg'}}" alt="Third slide">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
   </div>
-  <div class="container text-center py-5">
-    <div class="row">
-      <!-- kanan -->
-      <div class="col-lg-6 row p-5">
-        <div class="col-lg-3">
-          <i class="fas fa-plus-square fa-4x d-inline px-0 text-main"></i>
+
+  <!-- FEATURE -->
+  <div class="container text-center py-5 my-3">
+    <div class="row py-3">
+      <div class="col-lg-6 my-2">
+        <div class="col-lg-12 py-3">
+          <i class="fas fa-plus-square fa-5x feature text-main"></i>          
         </div>
-        <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Meningkatkan Kesehatan</h4>
-          <p class="d-inline tagline text-secondary">Menyediakan produk-produk berkualitas tinggi dengan harga terjangkau.</p>
-        </div>
-      </div>
-      <!-- kiri -->
-      <div class="col-lg-6 row p-5">
-        <div class="col-lg-3">
-          <i class="fas fa-medkit fa-4x d-inline px-0 text-main"></i>
-        </div>
-        <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Jaringan</h4>
-          <p class="d-inline tagline text-secondary">Melalui dokter, rumah sakit, distributor, dan reseller.</p>
+        <div class="col-lg-12">
+          <p class="hfeature my-2">Meningkatkan Kesehatan</p>
+          <p class="dfeature text-secondary">Menyediakan produk-produk berkualitas tinggi dengan harga terjangkau.</p>          
         </div>
       </div>
+      <div class="col-lg-6 my-2">
+        <div class="col-lg-12 py-3">
+          <i class="fas fa-user-md fa-5x feature text-main"></i>          
+        </div>
+        <div class="col-lg-12">
+          <p class="hfeature my-2">Personil yang Berkualitas</p>
+          <p class="dfeature text-secondary">Staf berpengalaman di bidangnya masing-masing.</p>          
+        </div>
+      </div>     
     </div>
-    <div class="row">
-      <!-- kanan -->
-      <div class="col-lg-6 row p-5">
-        <div class="col-lg-3">
-          <i class="fas fa-user-md fa-4x d-inline px-0 text-main"></i>
+    <div class="row py-3">
+      <div class="col-lg-6 my-2">
+        <div class="col-lg-12 py-3">
+          <i class="fas fa-medkit fa-5x feature text-main"></i>          
         </div>
-        <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Personil Yang Memenuhi Syarat</h4>
-          <p class="d-inline tagline text-secondary">Staf berpengalaman di bidangnya masing-masing.</p>
+        <div class="col-lg-12">
+          <p class="hfeature my-2">Jaringan</p>
+          <p class="dfeature text-secondary">Melalui dokter, rumah sakit, distributor, dan reseller.</p>          
         </div>
-      </div>
-      <!-- kiri -->
-      <div class="col-lg-6 row p-5">
-        <div class="col-lg-3">
-          <i class="fas fa-ambulance fa-4x d-inline px-0 text-main"></i>
+      </div> 
+      <div class="col-lg-6 my-2">
+        <div class="col-lg-12 py-3">
+          <i class="fas fa-ambulance fa-5x feature text-main"></i>          
         </div>
-        <div class="col-lg-9 text-left align-middle px-0">
-          <h4 class="col-header">Pengiriman Cepat</h4>
-          <p class="d-inline tagline text-secondary">Sebagian besar produk sudah tersedia.</p>
+        <div class="col-lg-12">
+          <p class="hfeature my-2">Pengiriman Cepat</p>
+          <p class="dfeature text-secondary">Sebagian besar produk sudah tersedia.</p>          
         </div>
-      </div>
+      </div>     
     </div>
   </div>
+
+  <!-- VISI DAN MISI -->
   <div class="container text-center mb-5">
     <h2 class="py-5">Visi dan Misi Kami</h2>
     <div class="vision pb-5">
