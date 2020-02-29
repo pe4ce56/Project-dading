@@ -80,6 +80,7 @@
             <img src="{{Storage::url('product_image/'.$product->image)}}" class="card-img-top" alt="...">
         </div>
       </div>
+      </div>
     @endforeach
   </div>
 </div>
