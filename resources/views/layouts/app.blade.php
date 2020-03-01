@@ -69,7 +69,7 @@
       @yield('content')
     </div>
     <!-- NAVBAR -->
-    <div class="container-flex pt-md-5 pr-md-5 pb-4 pl-md-5 bg-dark mt-4">
+    <div class="container-flex pt-md-5 pr-md-5 pb-4 pl-md-5 bg-dark">
       <div class="container text-light pt-5">
         <div class="row">
           <div class="col-lg-4">

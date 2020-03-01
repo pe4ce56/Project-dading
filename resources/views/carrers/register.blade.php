@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-sm">
+    <div class="container-sm mb-4">
         <div class="card mt-4 float-none">
             <div class="card-body">
                 <form class="row form-register-carrers" action="/recruitment/register" method="POST">
@@ -333,8 +333,10 @@
                             <input type="file" class="form-control">
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-block btn-lg" disabled>Daftar</button>
-                    <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+                    <div class="container">
+                        <button class="btn btn-primary btn-block btn-lg" disabled>Daftar</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+                    </div>
                 </form>
             </div>
         </div>    

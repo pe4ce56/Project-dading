@@ -4,11 +4,11 @@
 
 <div class="container-flex bg-white">
   <div class="container pt-4 pb-3">
-    <h3>Katalog</h3>
+    <h3>Produk</h3>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bg-transparent p-0">
         <li class="breadcrumb-item"><a href="/">Beranda</a></li>
-        <li class="breadcrumb-item" aria-current="page">Katalog</li>
+        <li class="breadcrumb-item" aria-current="page">Produk</li>
       </ol>
     </nav>
   </div>
@@ -59,18 +59,18 @@
     </ul>
   </div>
 </nav>
-<div class="container">
+<div class="container mb-4">
   <div class="row">
     @foreach ($products as $i=>$product)
       @if (Request::url() === url('products') && $loop->iteration === $product->category_id)
         <h1 class="col-12 mt-4 text-center">{{$category[$i]->name}}</h1>
       @endif
       <div class="col-lg-3 col-md-4 col-6 product mt-3">
-        <div class="card" style="max-width: 16rem;" data-toggle="modal" data-target="#modalDetails" v-on:click="details({{$product->id}})">
-          <div class="card-body d-flex justify-content-center align-items-center  p-0" style="height: 4rem">
+        <div class="card border-0" style="max-width: 16rem;" data-toggle="modal" data-target="#modalDetails" v-on:click="details({{$product->id}})">
+          <div class="card-body d-flex justify-content-center align-items-center p-0" style="height: 4rem">
             {{$product->name}}
           </div>
-          <div class="image">
+          <div class="image border">
             <img src="{{url('storage/product_image')}}/{{$product->image}}" class="card-img-top" alt="...">
           </div>
         </div>
