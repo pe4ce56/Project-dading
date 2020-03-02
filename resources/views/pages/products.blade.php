@@ -39,7 +39,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse category-product" id="categoryProduct">
+  <div class="collapse navbar-collapse category-product mt-3" id="categoryProduct">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item btn-category-product ml-1 @if(Request::url() === url('products')) active @endif">
         <a class="nav-link text-white " href="/products">Semua Produk</a>
