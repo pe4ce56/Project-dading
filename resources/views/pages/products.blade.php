@@ -4,13 +4,28 @@
 
 <div class="container-flex bg-white">
   <div class="container pt-4 pb-3">
-    <h3>Produk</h3>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb bg-transparent p-0">
-        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
-        <li class="breadcrumb-item" aria-current="page">Produk</li>
-      </ol>
-    </nav>
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <h3>Produk</h3>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+            <li class="breadcrumb-item" aria-current="page">Produk</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-lg-4 col-sm-12 px-4">
+        <label for="" class="row">&nbsp;</label>
+        <div class="row">
+            <div class="input-group mb-3">
+            <input type="text" class="form-control outline-0" name="search" placeholder="Produk" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-main text-light" type="button" id="button-addon2"><i class="fas fa-search"> </i> Cari</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
