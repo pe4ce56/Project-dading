@@ -15,7 +15,8 @@ class CarrersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        return view('carrers.carerr', ['active' => 'career']);
         // $data =  career::with('detail_career', 'address_career')->get();
         // foreach ($data as $d) {
         //     echo $d->address_career->career_id;

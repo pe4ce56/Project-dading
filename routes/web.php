@@ -24,7 +24,7 @@ Route::post('/admin/login', 'Auth\LoginController@login');
 Route::get('/admin/change', 'Auth\UsersController@index');
 Route::post('/admin/logout', 'Auth\LoginController@logout')->name('logout');;
 
-Route::get('/recruitment', 'CarrersController@index');
+Route::get('/recruitment/carerr', 'CarrersController@index');
 Route::get('/recruitment/register', 'CarrersController@create');
 Route::post('/recruitment/register', 'CarrersController@store');
 

@@ -24,7 +24,7 @@ body {
 }
 
 .nav-item {
-    padding: 0px 15px;
+    padding: 0px 25px;
     font-size: 1rem;
 }
 
@@ -34,11 +34,6 @@ body {
 
 .active {
     background-color: #3a3c42;
-}
-
-
-.form-register-carrers {
-    font-size: 1.05rem;
 }
 
 .links a {
@@ -121,6 +116,18 @@ body {
 /* CAREER */
 .ttl {
     border-radius: 0;
+}
+
+.qualify{
+    font-size: 1.2rem;
+}
+
+.dftr{
+    font-size: 1.5rem;
+}
+
+.form-register-carrers {
+    font-size: 1.05rem;
 }
 
 /* ADMIN */

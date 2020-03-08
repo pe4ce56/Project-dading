@@ -6,19 +6,19 @@
   <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner" data-pause="false">
       <div class="carousel-item active" data-pause="false">
-        <img class="d-block w-100" src="{{'img/img1.jpg'}}" alt="First slide">
+        <img class="d-block w-100" src="{{'img/home/1.jpg'}}" alt="First slide">
       </div>
       <div class="carousel-item" data-pause="false">
-        <img class="d-block w-100" src="{{'img/img2.jpg'}}" alt="Second slide">
+        <img class="d-block w-100" src="{{'img/home/2.jpg'}}" alt="Second slide">
       </div>
       <div class="carousel-item" data-pause="false">
-        <img class="d-block w-100" src="{{'img/img3.jpg'}}" alt="Third slide">
+        <img class="d-block w-100" src="{{'img/home/3.jpg'}}" alt="Third slide">
       </div>
       <div class="carousel-item" data-pause="false">
-        <img class="d-block w-100" src="{{'img/img4.jpg'}}" alt="Third slide">
+        <img class="d-block w-100" src="{{'img/home/4.jpg'}}" alt="Third slide">
       </div>
       <div class="carousel-item" data-pause="false">
-        <img class="d-block w-100" src="{{'img/img5.jpg'}}" alt="Third slide">
+        <img class="d-block w-100" src="{{'img/home/5.jpg'}}" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

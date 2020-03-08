@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- icon -->
-    <link rel="shortcut icon" href="{{'img/logo.png'}}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{'/img/logo.png'}}" type="image/x-icon" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +28,7 @@
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="/"><img src="https://endo.id/images/logo-endo.png" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="{{'/img/navbar/logo.png'}}" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,7 +44,7 @@
               <a class="nav-link text-white" href="/products">Produk</a>
             </li>
             <li class="nav-item @if($active ==='career') active @endif">
-              <a class="nav-link text-white" href="/recruitment/register">Karir</a>
+              <a class="nav-link text-white" href="/recruitment/carerr">Karir</a>
             </li>
             @if (Auth::check())
             <li class="nav-item dropdown @if($active ==='admin') active @endif">
