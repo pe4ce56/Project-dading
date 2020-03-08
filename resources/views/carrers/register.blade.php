@@ -322,15 +322,67 @@
 
                     
                     <div class="col-lg-4 col-md-12 p-md-4">
-                        <div class="form-group">
+                        <div class="form-group my-5">
                             <label class="form-label">Kartu Tanda Penduduk
                                 (Format File: JPG, JPEG, PNG, max 2 MB)</label>
-                            <input type="file" class="form-control">
+                            <input type="file" class="form-control-file">
                         </div>
-                        <div class="form-group">
-                            <label class="form-label">Kartu Tanda Penduduk
+                        <div class="form-group my-5">
+                            <label class="form-label">Kartu Keluarga
                                 (Format File: JPG, JPEG, PNG, max 2 MB)</label>
-                            <input type="file" class="form-control">
+                            <input type="file" class="form-control-file">
+                        </div>
+                        <div class="form-group my-5">
+                            <label class="form-label">Foto Berwarna
+                                (Format File: JPG, JPEG, PNG, max 2 MB)</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+                        <div class="form-group my-5">
+                            <label class="form-label">Ijazah Terakhir
+                                (Format File: JPG, JPEG, PNG, max 2 MB)</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+                        <div class="form-group my-5">
+                            <label class="form-label">Transkrip Nilai
+                                (Format File: JPG, JPEG, PNG, max 2 MB)</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+                        <div class="form-group my-5">
+                            <label class="form-label">Curriculum Vitae
+                                (Format File: JPG, JPEG, PNG, max 2 MB)</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+                        <div class="mt-4">
+                            <p>Darimana Anda mengetahui informasi lowongan ini?</p>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                    <label class="form-check-label" for="exampleRadios1">Instagram</label>
+                                </div>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">Linked.in</label>
+                                </div>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3">
+                                    <label class="form-check-label" for="exampleRadios2">Facebook</label>
+                                </div>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4">
+                                    <label class="form-check-label" for="exampleRadios2">Telegram</label>
+                                </div>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option5">
+                                    <label class="form-check-label" for="exampleRadios2">Jobstreet / Jobindo.id / Topkarir.com</label>
+                                </div>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option6">
+                                    <label class="form-check-label" for="exampleRadios2">Keluarga, saudara, teman</label>
+                                </div>
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option7">
+                                    <label class="form-check-label" for="exampleRadios2">Lainnya (sebutkan) :</label>
+                                    <textarea name="lainnya" id=""></textarea>
+                                </div>
                         </div>
                     </div>
                     <div class="container">
