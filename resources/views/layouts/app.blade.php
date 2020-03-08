@@ -40,24 +40,30 @@
             <li class="nav-item @if($active ==='about') active @endif">
               <a class="nav-link text-white" href="/about">Tentang Kami</a>
             </li>
-            <li class="nav-item @if($active ==='product') active @endif">
+            <li class="nav-item @if($active ==='product') active @endif dropdown">
               <a class="nav-link text-white" href="/products">Produk</a>
+              <div class="dropdown-menu drop-hover py-0 border-dark border-2">
+                  <a class="dropdown-item text-white py-2" href="/products/category/1">Medical Equipment</a>
+                  <a class="dropdown-item text-white py-2" href="/products/category/2">Bahan Habis Pakai</a>
+                  <a class="dropdown-item text-white py-2" href="/products/category/3">Alat dan Bahan LAB</a>
+                  <a class="dropdown-item text-white py-2" href="/products/category/4">Sparepart Alkes</a>
+              </div>
             </li>
             <li class="nav-item @if($active ==='career') active @endif">
               <a class="nav-link text-white" href="/recruitment/carerr">Karir</a>
             </li>
             @if (Auth::check())
             <li class="nav-item dropdown @if($active ==='admin') active @endif">
-              <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link text-white" href="/admin/products">
                 Admin
               </a>
-              <div class="dropdown-menu admin-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-white" href="/admin/products">Produk</a>
-                <a class="dropdown-item text-white" href="/admin/setting">Pengaturan</a>
-                <div class="dropdown-divider"></div>
+              <div class="dropdown-menu drop-hover py-0 border-dark border-2" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white py-2" href="/admin/products">Produk</a>
+                <a class="dropdown-item text-white py-2" href="/admin/setting">Pengaturan</a>
+                <div class="dropdown-divider my-0"></div>
                 <form method="POST" action="{{ route('logout') }}">
                   {{ csrf_field() }}
-                  <button class="dropdown-item text-white" href="#">Logout</button>
+                  <button class="dropdown-item text-white py-2" href="#">Logout</button>
                 </form>
               </div>
             </li>
@@ -119,6 +125,16 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{{url('js/app.js')}}"></script>
+    <script>
+      $(document).ready(function(){
+        $(".dropdown, .btn-group").hover(function(){
+          var dropdownMenu = $(this).children(".dropdown-menu");
+          if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+          }
+        });
+      });
+    </script>
     @yield('footer')
   </body>
 </html>
