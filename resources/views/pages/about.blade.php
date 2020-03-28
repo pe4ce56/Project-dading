@@ -2,6 +2,13 @@
 
     
 @section('content')
+<div class="sosmed">
+    <div style="color: #878787">SOSMED</div>
+    <ul class="list-group rounded-0">
+      <a href="https://www.facebook.com/distributoralkeslabmlg/"><li class="list-group-item rounded-0" style="background-color:#3b5998"><i class="fab fa-facebook-f"></i></li></a>
+      <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=pt.riskyputrakasih@yahoo.com&tf=1"><li class="list-group-item rounded-0" style="background-color:#db4437"><i class="far fa-envelope"></i></li></a>
+    </ul> 
+  </div>
     <div class="container-flex bg-white">
         <div class="container pt-4 pb-3">
             <h3>Tentang Kami</h3>

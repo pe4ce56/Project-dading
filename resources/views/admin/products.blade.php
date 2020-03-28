@@ -26,7 +26,7 @@
             @endif
             <a href="/admin/products/create" class="btn btn-main text-light"><i class="fas fa-plus mr-2"></i> Tambah Produk</a>
             <div class="table-responsive">
-                <table class="table table-bordered mt-2">
+                <table class="table table-bordered mt-2" id="table-products">
                     <thead>
                         <tr>
                             <th class="text-center" scope="col">No</th>
@@ -71,4 +71,20 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('header')
+    {{-- <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"> --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+@endsection 
+@section('footer')
+<script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    
+    $(document).ready(function(){
+        $('#table-products').DataTable();
+    })
+</script>
+    
 @endsection

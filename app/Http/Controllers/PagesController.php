@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Product;
 use App\ProductCategory;
+use Symfony\Component\Console\Input\Input;
 
 class PagesController extends Controller
 {
@@ -18,12 +19,13 @@ class PagesController extends Controller
         return view('pages.about', ['active' => 'about']);
     }
 
-    public function products($category = null)
+    public function products(Request $request, $category = null)
     {
+        $search = $request->search;
         if ($category) {
-            $products = Product::where('category_id', $category)->get()->sortBy('name');
+            $products = Product::where([['category_id', '=', $category], ['name', 'like', "%$search%"]])->get()->sortBy('name');
         } else {
-            $products = Product::all()->sortBy('name')->sortBy('category_id');
+            $products = Product::where('name', 'like', "%$search%")->get()->sortBy('name')->sortBy('category_id');
         }
         $category = ProductCategory::all()->sortBy('id');
         $data = array('products' => $products, 'category' => $category, 'active' => 'product');

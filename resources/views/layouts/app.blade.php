@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{url('css/app.css')}}">
   <link rel="stylesheet" href="{{url('css/style.css')}}">
+  @yield('header')
     <title>PT. Risky Putra Kasih</title>
   </head>
   <body>
