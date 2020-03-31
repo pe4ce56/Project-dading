@@ -13,6 +13,12 @@
     <title>PT. Risky Putra Kasih</title>
   </head>
   <body>
+    <div class="share">
+        <a href="https://web.facebook.com/distributoralkeslabmlg/" target="_blank" class="linker fb"><i class="fab fa-facebook-f mt-2"></i></a>
+        <a href="mailto:pt.riskyputrakasih@yahoo.com" class="linker gmail"><i class="far fa-envelope mt-2"></i></a>
+        <!-- <a href="www.facebook.com" class="linker twt"><i class="fab fa-twitter mt-2"></i></a>
+        <a href="www.facebook.com" class="linker wa"><i class="fab fa-whatsapp mt-2"></i></a> -->
+    </div>
     <div class="header-top d-none d-lg-block py-3">
       <div class="container">
         <div class="row text-white pt">
@@ -28,7 +34,7 @@
     </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="/"><img src="{{'/img/navbar/logo.png'}}" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="{{'/img/navbar/logo.png'}}" alt="PT. RISKY PUTRA KASIH"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,6 +54,9 @@
                   <a class="dropdown-item text-white py-2" href="/products/category/3">Alat dan Bahan LAB</a>
                   <a class="dropdown-item text-white py-2" href="/products/category/4">Sparepart Alkes</a>
               </div>
+            </li>
+            <li class="nav-item @if($active ==='service') active @endif">
+              <a class="nav-link text-white" href="/service">Service</a>
             </li>
             <li class="nav-item @if($active ==='career') active @endif">
               <a class="nav-link text-white" href="/recruitment/carerr">Karir</a>
@@ -119,7 +128,7 @@
         </div>
       </div>
       <div class="container text-light pt-4 border-top border-low border-3">
-        <h6 class="text-low">Copyright © RIZKY PUTRA KASIH, PT.</h6>
+        <h6 class="text-low">Copyright © RISKY PUTRA KASIH, PT.</h6>
       </div>
     </div>
     <!-- Optional JavaScript -->

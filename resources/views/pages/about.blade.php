@@ -16,7 +16,7 @@
     <div class="container mb-3 mt-5">
         <div class="row">
             <div class="col-lg-8 offset-md-2">
-            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner" data-pause="false">
                 <div class="carousel-item active" data-pause="false">
                     <img class="d-block w-100" src="{{'img/about/1.jpg'}}" alt="First slide">
@@ -37,11 +37,11 @@
                     <img class="d-block w-100" src="{{'img/about/6.jpg'}}" alt="Sixth slide">
                 </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>

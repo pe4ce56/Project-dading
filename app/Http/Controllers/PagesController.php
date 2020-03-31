@@ -13,6 +13,7 @@ class PagesController extends Controller
     {
         return view('pages.home', ['active' => 'home']);
     }
+
     public function about()
     {
         return view('pages.about', ['active' => 'about']);
@@ -28,6 +29,11 @@ class PagesController extends Controller
         $category = ProductCategory::all()->sortBy('id');
         $data = array('products' => $products, 'category' => $category, 'active' => 'product');
         return view('pages.products', $data);
+    }
+    
+    public function service()
+    {
+        return view('pages.service', ['active' => 'service']);
     }
 
     public function getProduct($id)
