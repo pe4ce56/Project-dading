@@ -17,6 +17,21 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{{url('js/app.js')}}"></script>
+    <script>
+      let clone = $("#instance").clone();
+
+      $(window).on('resize load pagebeforecreate', function(){
+        if ($(window).width() < 960) {
+          $("#instance").remove();
+        }
+      });
+
+      $(window).on('resize', function(){
+        if ($(window).width() > 960) {
+          $(".card-body").prepend(clone);
+        }
+      }); 
+    </script>
     @yield('footer')
   </body>
 </html>

@@ -24,11 +24,11 @@
       <div class="col-lg-4 col-sm-12 px-4">
         <label for="" class="row">&nbsp;</label>
         <div class="row">
-          <form action="" method="GET">
-            <div class="input-group mb-3">
-            <input type="text" class="form-control outline-0" name="search" placeholder="Produk" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-main text-light" type="submit" id="button-addon2"><i class="fas fa-search"> </i> Cari</button>
+            <form action="" method="GET">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control outline-0" name="search" placeholder="Produk" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-main text-light" type="submit" id="button-addon2"><i class="fas fa-search"> </i> Cari</button>
             </form>
             </div>
           </div>
@@ -102,8 +102,8 @@
           </div>
           <div class="image border">
             <img src="{{Storage::url('product_image/'.$product->image)}}" class="card-img-top" alt="...">
+          </div>
         </div>
-      </div>
       </div>
     @endforeach
   </div>
