@@ -14,12 +14,6 @@
     <title>PT. Risky Putra Kasih</title>
   </head>
   <body>
-    <div class="share">
-        <a href="https://web.facebook.com/distributoralkeslabmlg/" target="_blank" class="linker fb"><i class="fab fa-facebook-f mt-2"></i></a>
-        <a href="mailto:pt.riskyputrakasih@yahoo.com" class="linker gmail"><i class="far fa-envelope mt-2"></i></a>
-        <!-- <a href="www.facebook.com" class="linker twt"><i class="fab fa-twitter mt-2"></i></a>
-        <a href="www.facebook.com" class="linker wa"><i class="fab fa-whatsapp mt-2"></i></a> -->
-    </div>
     <div class="header-top d-none d-lg-block py-3">
       <div class="container">
         <div class="row text-white pt">

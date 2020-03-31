@@ -28,50 +28,6 @@ body {
     }
 }
 
-/* SHARE */
-.share{
-    position: fixed;
-    padding: 0;
-    z-index: 999;
-    left: 0;
-    top: 45%;
-}
-
-.share .linker{
-    width: 45px;
-    height: 45px;
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    display: block;
-    transition: width 0.1s ease-in;
-}
-
-.share .linker i{
-    vertical-align: middle;
-}
-
-.share .linker:hover{
-    width: 60px;
-    color: white;
-}
-
-.share .fb{
-    background-color: #3B5998;
-}
-
-.share .gmail{
-    background-color: #DB4437;
-}
-
-/* .share .twt{
-    background-color: #1DA1F2;
-}
-
-.share .wa{
-    background-color: #4DC247;
-} */
-
 /* dropdown */
 
 .drop-hover {
