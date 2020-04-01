@@ -81,9 +81,13 @@
         </div>
       </div>
     </nav>
+
     <div id="app">
       @yield('content')
+      <!-- scroll up -->
+      <button class="btn btn-main scroll-top" data-scroll="up" type="button" title="Go Up"><i class="fa fa-chevron-up"></i>
     </div>
+
     <!-- NAVBAR -->
     <div class="container-flex pt-md-5 pr-md-5 pb-4 pl-md-5 bg-dark">
       <div class="container text-light pt-5">
@@ -141,6 +145,24 @@
             dropdownMenu.parent().toggleClass("open");
           }
         });
+      });
+
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $('.scroll-top').fadeIn();
+          } else {
+            $('.scroll-top').fadeOut();
+          }
+        });
+
+        $('.scroll-top').click(function () {
+          $("html, body").animate({
+            scrollTop: 0
+          }, 500);
+            return false;
+        });
+
       });
     </script>
     @yield('footer')

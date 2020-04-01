@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container my-4">
+<div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -50,6 +50,7 @@
                                 @enderror
                             </div>
                         </div>
+
                         <div class="form-group row">
                             <label for="new-password" class="col-md-4 col-form-label text-md-right">Password baru</label>
 
@@ -57,6 +58,7 @@
                                 <input id="new-password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="current-password">
                             </div>
                         </div>
+
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right">Tulis ulang password baru</label>
 
@@ -70,9 +72,9 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="form-group row mt-4 mb-2">
+                            <div class="col-md-4 offset-md-4">
+                                <button type="submit" class="btn btn-primary btn-block">
                                     Simpan Perubahan
                                 </button>
 

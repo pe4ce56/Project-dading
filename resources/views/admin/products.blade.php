@@ -24,7 +24,7 @@
                 </button>
             </div>
             @endif
-            <a href="/admin/products/create" class="btn btn-main text-light"><i class="fas fa-plus mr-2"></i> Tambah Produk</a>
+            <a href="/admin/products/create" class="btn btn-main text-light my-3"><i class="fas fa-plus mr-2"></i> Tambah Produk</a>
             <div class="table-responsive">
                 <table class="table table-bordered mt-2" id="table-products">
                     <thead>
