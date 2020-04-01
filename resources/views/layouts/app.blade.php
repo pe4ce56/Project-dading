@@ -50,8 +50,12 @@
                   <a class="dropdown-item text-white py-2" href="/products/category/4">Sparepart Alkes</a>
               </div>
             </li>
-            <li class="nav-item @if($active ==='service') active @endif">
+            <li class="nav-item @if($active ==='service') active @endif dropdown">
               <a class="nav-link text-white" href="/service">Service</a>
+              <div class="dropdown-menu drop-hover py-0 border-dark border-2">
+                  <a class="dropdown-item text-white py-2" href="#">Alkes Electric</a>
+                  <a class="dropdown-item text-white py-2" href="#">Alkes Mekanik</a>
+              </div>
             </li>
             <li class="nav-item @if($active ==='career') active @endif">
               <a class="nav-link text-white" href="/recruitment/carerr">Karir</a>
